@@ -37,7 +37,12 @@ class AnswerBot extends ActivityHandler {
                     case 'hello':
                     case 'hi':
                     case 'echo':
-                        await context.sendActivity({ text : `You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{suggestions:['hello','waterfall','herocard']}} });
+                        await context.sendActivity({ text : `You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{suggestions:[ 'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
+                            'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
+                            'siq article', 'siq image', 'siq link',
+                            'siq sugg', 'siq fwd'
+                            ]}} 
+                        });
                         break;
                     case 'widgets':
                         mswidgets.sendWidget('herocard', context);
