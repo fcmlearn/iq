@@ -1,9 +1,7 @@
 {
-    "name": "echobot",
+    "name": "testbot",
     "version": "1.0.0",
-    "description": "Bot Builder v4 echo bot sample",
-    "author": "Microsoft",
-    "license": "MIT",
+    "description": "test bot",
     "main": "index.js",
     "scripts": {
         "start": "node ./index.js",
@@ -16,8 +14,11 @@
         "url": "https://github.com"
     },
     "dependencies": {
-        "botbuilder": "~4.4.0",
+        "botbuilder": "^4.4.0",
+        "botbuilder-ai": "^4.4.0",
+        "botbuilder-dialogs": "^4.4.0",
         "dotenv": "^7.0.0",
+        "node-fetch": "^2.6.0",
         "restify": "^8.2.0"
     },
     "devDependencies": {

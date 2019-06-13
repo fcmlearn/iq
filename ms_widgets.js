@@ -1,4 +1,242 @@
-const { ActivityHandler, CardFactory, MessageFactory, ActionTypes } = require('botbuilder');
+const { ActivityHandler, CardFactory, MessageFactory, AttachmentLayoutTypes, ActionTypes } = require('botbuilder');
+
+const siqwidgetformat = {
+    image : {
+        "zohosalesiq": {
+            "replies": [
+              {
+                "text": "Beef Katsudon",
+                "image": "https://media.giphy.com/media/KqYslPraZqyuQ/giphy.gif"
+              }
+            ]
+        }
+    },
+    article : {
+        "zohosalesiq": {
+            "replies": [
+              {
+                "text": "Here are your reference articles",
+                "type": "articles",
+                "image": "http://zylker.com/help/common.png",
+                "title": "Articles about discount in home needs",
+                "articles": [
+                  "121212121",
+                  "123434343",
+                  "123334678"
+                ]
+              }
+            ]
+        }
+    },
+    link : {
+        "zohosalesiq": {
+            "replies": {
+              "text": "Sumire Karaage Roll",
+              "type": "links",
+              "image": "https://media.giphy.com/media/HSSJphsM5t744/giphy.gif",
+              "links": [
+                {
+                  "url": "https://i.pinimg.com/originals/5c/19/59/5c195929e62b8b3097d25a1a9d7ffc7c.png",
+                  "icon": "https://i.pinimg.com/originals/5c/19/59/5c195929e62b8b3097d25a1a9d7ffc7c.png",
+                  "text": "Spicy Meat & Vegetables Curry served with Rice & Herbs!"
+                },
+                {
+                  "url": "https://i.pinimg.com/474x/48/98/34/4898341237a7efbf3c10e315b35c107c.jpg",
+                  "icon": "https://i.pinimg.com/474x/48/98/34/4898341237a7efbf3c10e315b35c107c.jpg",
+                  "text": "Cheesy Bean Tacos served with French Fries! 🍟"
+                }
+              ]
+            }
+        }
+    },
+    happy:{
+        "zohosalesiq": {
+            "input": {
+             "type": "happiness-rating",
+             "level": "3"
+           },
+           "replies":[{
+               "text" : "Gotcha Pork Roast",
+               "image": "https://i.ytimg.com/vi/GAdob1t4Nyk/maxresdefault.jpg"
+           }]
+         }
+    },
+    star:{
+        "zohosalesiq": {
+            "input": {
+              "type": "star-rating",
+              "level": "5"
+            },
+            "replies":[{
+                "text" : "Ratatouille",
+                "image": "https://cdn.bluefoot.com/starvin/images/Ratatouille/pinterest-ratatouille.png"
+            }] 
+          }
+    },
+    like:{
+        "zohosalesiq": {
+            "input": {
+              "type": "like"
+            },
+            "replies":[{
+                "text" : "Char Okakiage",
+                "image": "https://vignette.wikia.nocookie.net/shokugekinosoma/images/8/83/Char_Okakiage_%28anime%29.png"
+            }] 
+        }
+    },
+    singleselect:{
+        "zohosalesiq": {
+            "input": {
+              "type": "select",
+              "options": [
+                "Char Okakiage",
+                "Ratatouille",
+                "Mapo Curry Noodles"
+              ]
+            },
+            "replies":[{
+                "text" : "Single select"
+            }]
+        }
+    },
+    multiselect:{
+        "zohosalesiq": {
+            "input": {
+              "type": "multiple-select",
+              "options": [
+                "Char Okakiage",
+                "Ratatouille",
+                "Mapo Curry Noodles"
+              ],
+              "max_selection": "2"
+            },
+            "replies":[{
+                "text" : "multi select"
+            }] 
+        }
+    },
+    slider:{
+        "zohosalesiq": {
+            "input": {
+              "type": "slider",
+              "values": [
+                "Sad",
+                "Neutral",
+                "Happy"
+              ]
+            },
+            "replies":[{
+                "text" : "slider"
+            }] 
+        }
+    },
+    rangeslider:{
+        "zohosalesiq": {
+            "input": {
+              "type": "range-slider",
+              "values": [
+                "$100",
+                "$200",
+                "$300",
+                "$400",
+                "$500",
+                "$600"
+              ]
+            },
+            "replies":["range slider"]
+        }
+    },
+    calender:{
+        "zohosalesiq": {
+            "input": {
+              "to": "+5",
+              "tz": true,
+              "from": "-5",
+              "time": true,
+              "type": "calendar",
+              "label": "Schedule a meeting",
+              "select_label": "Choose a slot"
+            },
+            "replies":["cal"]
+        }
+    },
+    rangecal:{
+        "zohosalesiq": {
+            "input": {
+              "to": "+5",
+              "tz": true,
+              "from": "-5",
+              "time": true,
+              "type": "range-calendar",
+              "label": "Schedule a meeting",
+              "select_label": "Choose a slot"
+            },
+            "replies":["range cal"]
+        }
+    },
+    location:{
+        "zohosalesiq": {
+            "input": {
+              "lat": "90.1",
+              "lng": "20.3",
+              "type": "location",
+              "label": "Share Location",
+              "radius": "2 kms",
+              "select_label":"Send my locale"
+            },
+            "replies":["location"]
+        }
+    },
+    timeslot:{
+        "zohosalesiq": {
+            "input": {
+              "tz": true,
+              "type": "timeslots",
+              "label": "Book a slot",
+              "slots": [
+                "09:00",
+                "09:30",
+                "10:00",
+                "10:30",
+                "11:00",
+                "11:30"
+              ]
+            },
+            "replies":["time slot"]
+        }
+    },
+    datetimeslot:{
+        "zohosalesiq": {
+            "input": {
+              "tz": true,
+              "type": "date-timeslots",
+              "label": "Select a time ",
+              "slots": {
+                "24/08/2018": [
+                  "09:00",
+                  "09:30",
+                  "10:00",
+                  "10:30",
+                  "11:00",
+                  "11:30"
+                ]
+              }
+            },
+            "replies":["date time slot"]
+        }
+    },
+    suggestions:{
+        "replies":[{
+            "text": "Rainbow Terrine",
+            "image": "https://i.pinimg.com/originals/2b/85/22/2b8522719ee02017a66f41314af7c682.jpg"
+          }],
+        "suggestions":['Temari Bento', 'Frittata', 'Souffle Omelette', 'Sumire Karaage Roll', 'Onigiri']
+    },
+    forward:{
+        "action" : "forward",
+        "replies":["forwading ..."]
+    }
+}
 
 class MSWidgets extends ActivityHandler {
     constructor() {
@@ -42,6 +280,57 @@ class MSWidgets extends ActivityHandler {
             case 'suggcarousel':
                 this.suggCarousel(context);
                 break;
+            case 'siq link':
+                context.sendActivity({ channelData: siqwidgetformat.link });
+                break;
+            case 'siq image':
+                context.sendActivity({ channelData: siqwidgetformat.image });
+                break;
+            case 'siq article':
+                context.sendActivity({ channelData: siqwidgetformat.article });
+                break;
+            case 'siq happy':
+                context.sendActivity({ channelData: siqwidgetformat.happy });
+                break;
+            case 'siq star':
+                context.sendActivity({ channelData: siqwidgetformat.star });
+                break;
+            case 'siq like':
+                context.sendActivity({ channelData: siqwidgetformat.like});
+                break; 
+            case 'siq singleselect':
+                context.sendActivity({ channelData: siqwidgetformat.singleselect });
+                break;
+            case 'siq multiselect':
+                context.sendActivity({ channelData: siqwidgetformat.multiselect });
+                break;
+            case 'siq slider':
+                context.sendActivity({ channelData: siqwidgetformat.slider });
+                break;
+            case 'siq range slider':
+                context.sendActivity({ channelData: siqwidgetformat.rangeslider });
+                break;
+            case 'siq cal':
+                context.sendActivity({ channelData: siqwidgetformat.calender });
+                break;
+            case 'siq range cal':
+                context.sendActivity({ channelData: siqwidgetformat.rangecal });
+                break;
+            case 'siq loc':
+                context.sendActivity({ channelData: siqwidgetformat.location });
+                break;
+            case 'siq time':
+                context.sendActivity({ channelData: siqwidgetformat.timeslot });
+                break;
+            case 'siq date time':
+                context.sendActivity({ channelData: siqwidgetformat.datetimeslot });
+                break;
+            case 'siq sugg':
+                context.sendActivity({ channelData: siqwidgetformat.suggestions });
+                break;
+            case 'siq fwd':
+                context.sendActivity({ channelData: siqwidgetformat.forward });
+                break;
             default:
                 await context.sendActivity({
                     attachments: [
@@ -62,24 +351,24 @@ class MSWidgets extends ActivityHandler {
     // widget methods
     async heroCard(context) {
         const card = CardFactory.heroCard(
-            'Welcome to Bot Framework!',
-            'Welcome to Welcome Users bot sample! This Introduction card is a great way to introduce your Bot to the user and suggest some things to get them started. We use this opportunity to recommend a few next steps for learning more creating and deploying bots.',
+            'Food Wars!',
+            'For those out of the loop (or who just aren\'t interest in anime) Shokugeki no Soma, or Food Wars!, is one of the hottest manga adaptations on television (and Netflix) at the moment. While most people consider it just another NSFW anime (there are a lot of boobs, not gonna lie) it actually has a pretty solid plot and some pretty amazing foodporn. Whether you\'re a fan of the show or just like experimenting in the kitchen you should definitely try these unbelievable dishes from Food Wars!',
             ['https://blog.williams-sonoma.com/wp-content/uploads/2016/12/jan-15-Shoyu-Ramen-with-Pork-Belly.jpg'],
             [
                 {
                     type: ActionTypes.OpenUrl,
-                    title: 'Get an overview',
-                    value: 'https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0'
+                    title: 'Gotcha Pork Roast',
+                    value: 'https://media.giphy.com/media/WDuKqiuUPETYI/giphy.gif'
                 },
                 {
                     type: ActionTypes.OpenUrl,
-                    title: 'Ask a question',
-                    value: 'https://stackoverflow.com/questions/tagged/botframework'
+                    title: 'Souffle Omelette',
+                    value: 'https://media.giphy.com/media/W3jb1UC5Zt4pq/giphy.gif'
                 },
                 {
                     type: ActionTypes.OpenUrl,
-                    title: 'Learn how to deploy',
-                    value: 'https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0'
+                    title: 'Sumire Karaage Roll',
+                    value: 'https://media.giphy.com/media/HSSJphsM5t744/giphy.gif'
                 }
             ]
         );
@@ -109,13 +398,13 @@ class MSWidgets extends ActivityHandler {
         content.sendActivity({
             attachments:[
                 CardFactory.animationCard(
-                    'Microsoft Bot Framework',
+                    'Frittata',
                     [
-                        { url: 'https://i.giphy.com/Ki55RUbOV5njy.gif' }
+                        { url: 'https://media.giphy.com/media/TL060X7wVIfOU/giphy.gif' }
                     ],
                     [],
                     {
-                        subtitle: 'Animation Card'
+                        subtitle: 'Frittata is an egg-based Italian dish similar to an omelette or crustless quiche or scrambled eggs, enriched with additional ingredients such as meats, cheeses or vegetables. The word frittata is Italian and roughly translates to "fried."'
                     }
                 )
             ]
@@ -244,7 +533,7 @@ class MSWidgets extends ActivityHandler {
         content.sendActivity(
             MessageFactory.suggestedActions(
                 ['Temari Bento', 'Frittata', 'Souffle Omelette', 'Sumire Karaage Roll', 'Onigiri'],
-                // 'What is the best food?'
+                'What is the best food?'
             )
         );
     }
@@ -253,13 +542,13 @@ class MSWidgets extends ActivityHandler {
         const cardActions = [
             {
                 type: ActionTypes.PostBack,
-                title: 'Español',
-                value: 'englishSpanish'
+                title: 'Duck Katsu Curry',
+                value: 'Duck Katsu Curry'
             },
             {
                 type: ActionTypes.PostBack,
-                title: 'English',
-                value: 'englishEnglish'
+                title: 'Eggs Benedict',
+                value: 'Eggs Benedict'
             }
         ];
         content.sendActivity(
