@@ -30,7 +30,7 @@ const siqwidgetformat = {
     },
     link : {
         "zohosalesiq": {
-            "replies": {
+            "replies": [{
               "text": "Sumire Karaage Roll",
               "type": "links",
               "image": "https://media.giphy.com/media/HSSJphsM5t744/giphy.gif",
@@ -46,7 +46,7 @@ const siqwidgetformat = {
                   "text": "Cheesy Bean Tacos served with French Fries! 🍟"
                 }
               ]
-            }
+            }]
         }
     },
     happy:{
