@@ -58,7 +58,7 @@ const siqwidgetformat = {
            "replies":[{
                "text" : "Gotcha Pork Roast",
                "image": "https://i.ytimg.com/vi/GAdob1t4Nyk/maxresdefault.jpg"
-           }]
+           },"rating plz"]
          }
     },
     star:{
@@ -70,7 +70,7 @@ const siqwidgetformat = {
             "replies":[{
                 "text" : "Ratatouille",
                 "image": "https://cdn.bluefoot.com/starvin/images/Ratatouille/pinterest-ratatouille.png"
-            }] 
+            },"rating plz"] 
           }
     },
     like:{
@@ -81,7 +81,7 @@ const siqwidgetformat = {
             "replies":[{
                 "text" : "Char Okakiage",
                 "image": "https://vignette.wikia.nocookie.net/shokugekinosoma/images/8/83/Char_Okakiage_%28anime%29.png"
-            }] 
+            },"rating plz"] 
         }
     },
     singleselect:{
