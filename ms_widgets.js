@@ -226,15 +226,19 @@ const siqwidgetformat = {
         }
     },
     suggestions:{
-        "replies":[{
-            "text": "Rainbow Terrine",
-            "image": "https://i.pinimg.com/originals/2b/85/22/2b8522719ee02017a66f41314af7c682.jpg"
-          }],
-        "suggestions":['Temari Bento', 'Frittata', 'Souffle Omelette', 'Sumire Karaage Roll', 'Onigiri']
+        "zohosalesiq": {
+            "replies":[{
+                "text": "Rainbow Terrine",
+                "image": "https://i.pinimg.com/originals/2b/85/22/2b8522719ee02017a66f41314af7c682.jpg"
+            }],
+            "suggestions":['Temari Bento', 'Frittata', 'Souffle Omelette', 'Sumire Karaage Roll', 'Onigiri']
+        }
     },
     forward:{
-        "action" : "forward",
-        "replies":["forwading ..."]
+        "zohosalesiq": {
+            "action" : "forward",
+            "replies":["forwading ..."]
+        }
     }
 }
 
