@@ -54,7 +54,7 @@ class AnswerBot extends ActivityHandler {
                         else
                         {
                             //calling exteran services
-                            this.callingExternalservice(context);
+                            // this.callingExternalservice(context);
                             var isanssend = false;//qna.getAnsfromQnA(context);
                             if(!isanssend)
                             {
