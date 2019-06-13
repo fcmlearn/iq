@@ -177,8 +177,6 @@ const siqwidgetformat = {
     location:{
         "zohosalesiq": {
             "input": {
-              "lat": "90.1",
-              "lng": "20.3",
               "type": "location",
               "label": "Share Location",
               "radius": "2 kms",

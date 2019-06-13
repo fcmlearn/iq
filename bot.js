@@ -28,8 +28,8 @@ class AnswerBot extends ActivityHandler {
     constructor() {
         super();
         this.onMessage(async (context, next) => {
-            // var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
-            // await context.sendActivity(res);
+            var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
+            await context.sendActivity(res);
             if (context.activity.type === 'message' && context.activity.text) {
                 let text = context.activity.text.toLocaleLowerCase();
                 switch(text)
