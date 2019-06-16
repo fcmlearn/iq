@@ -29,7 +29,7 @@ class AnswerBot extends ActivityHandler {
         super();
         this.onMessage(async (context, next) => {
             var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
-            //await context.sendActivity(res);
+            context.sendActivity(res);
             if (context.activity.type === 'message' && context.activity.text) {
                 let text = context.activity.text.toLocaleLowerCase();
                 switch(text)
@@ -37,7 +37,7 @@ class AnswerBot extends ActivityHandler {
                     case 'hello':
                     case 'hi':
                     case 'echo':
-                        await context.sendActivity({ text : `You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{suggestions:['hello', 'hi', 'widgets', 'waterfall',
+                        context.sendActivity({ text : `You said : "${ context.activity.text }"`, channelData:{ zohosalesiq:{suggestions:['hello', 'hi', 'widgets', 'waterfall',
                             'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
                             'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
                             'siq article', 'siq image', 'siq link',
@@ -71,13 +71,13 @@ class AnswerBot extends ActivityHandler {
             }
             else if(context.activity.attachments)
             {
-                await context.sendActivity(` Name : '${ context.activity.attachments[0].name }'`);
-                await context.sendActivity(`contentType : '${ context.activity.attachments[0].contentType }'`);
-                await context.sendActivity(`contentUrl : '${ context.activity.attachments[0].contentUrl }'`);
+                context.sendActivity(` Name : '${ context.activity.attachments[0].name }'`);
+                context.sendActivity(`contentType : '${ context.activity.attachments[0].contentType }'`);
+                context.sendActivity(`contentUrl : '${ context.activity.attachments[0].contentUrl }'`);
             }
             else
             {
-                await context.sendActivity(`unable to process :(`);
+                context.sendActivity(`unable to process :(`);
             }
             // By calling next() you ensure that the next BotHandler is run.
             await next();
