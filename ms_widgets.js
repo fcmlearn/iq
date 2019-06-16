@@ -283,58 +283,58 @@ class MSWidgets extends ActivityHandler {
                 this.suggCarousel(context);
                 break;
             case 'siq link':
-                await context.sendActivity({ channelData: siqwidgetformat.link });
+                context.sendActivity({ channelData: siqwidgetformat.link });
                 break;
             case 'siq image':
-                await context.sendActivity({ channelData: siqwidgetformat.image });
+                context.sendActivity({ channelData: siqwidgetformat.image });
                 break;
             case 'siq article':
-                await context.sendActivity({ channelData: siqwidgetformat.article });
+                context.sendActivity({ channelData: siqwidgetformat.article });
                 break;
             case 'siq happy':
-                await context.sendActivity({ channelData: siqwidgetformat.happy });
+                context.sendActivity({ channelData: siqwidgetformat.happy });
                 break;
             case 'siq star':
-                await context.sendActivity({ channelData: siqwidgetformat.star });
+                context.sendActivity({ channelData: siqwidgetformat.star });
                 break;
             case 'siq like':
-                await context.sendActivity({ channelData: siqwidgetformat.like});
+                context.sendActivity({ channelData: siqwidgetformat.like});
                 break; 
             case 'siq singleselect':
-                await context.sendActivity({ channelData: siqwidgetformat.singleselect });
+                context.sendActivity({ channelData: siqwidgetformat.singleselect });
                 break;
             case 'siq multiselect':
-                await context.sendActivity({ channelData: siqwidgetformat.multiselect });
+                context.sendActivity({ channelData: siqwidgetformat.multiselect });
                 break;
             case 'siq slider':
-                await context.sendActivity({ channelData: siqwidgetformat.slider });
+                context.sendActivity({ channelData: siqwidgetformat.slider });
                 break;
             case 'siq range slider':
-                await context.sendActivity({ channelData: siqwidgetformat.rangeslider });
+                context.sendActivity({ channelData: siqwidgetformat.rangeslider });
                 break;
             case 'siq cal':
-                await context.sendActivity({ channelData: siqwidgetformat.calender });
+                context.sendActivity({ channelData: siqwidgetformat.calender });
                 break;
             case 'siq range cal':
-                await context.sendActivity({ channelData: siqwidgetformat.rangecal });
+                context.sendActivity({ channelData: siqwidgetformat.rangecal });
                 break;
             case 'siq loc':
-                await context.sendActivity({ channelData: siqwidgetformat.location });
+                context.sendActivity({ channelData: siqwidgetformat.location });
                 break;
             case 'siq time':
-                await context.sendActivity({ channelData: siqwidgetformat.timeslot });
+                context.sendActivity({ channelData: siqwidgetformat.timeslot });
                 break;
             case 'siq date time':
-                await context.sendActivity({ channelData: siqwidgetformat.datetimeslot });
+                context.sendActivity({ channelData: siqwidgetformat.datetimeslot });
                 break;
             case 'siq sugg':
-                await context.sendActivity({ channelData: siqwidgetformat.suggestions });
+                context.sendActivity({ channelData: siqwidgetformat.suggestions });
                 break;
             case 'siq fwd':
-                await context.sendActivity({ channelData: siqwidgetformat.forward });
+                context.sendActivity({ channelData: siqwidgetformat.forward });
                 break;
             default:
-                await context.sendActivity({
+                context.sendActivity({
                     attachments: [
                         CardFactory.adaptiveCard({
                             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -474,7 +474,7 @@ class MSWidgets extends ActivityHandler {
     
     // widget methods
     async heroCard(context) {
-        await context.sendActivity({ attachments: [
+        context.sendActivity({ attachments: [
             CardFactory.heroCard(
                 'Food Wars!',
                 'For those out of the loop (or who just aren\'t interest in anime) Shokugeki no Soma, or Food Wars!, is one of the hottest manga adaptations on television (and Netflix) at the moment. While most people consider it just another NSFW anime (there are a lot of boobs, not gonna lie) it actually has a pretty solid plot and some pretty amazing foodporn. Whether you\'re a fan of the show or just like experimenting in the kitchen you should definitely try these unbelievable dishes from Food Wars!',
@@ -504,7 +504,7 @@ class MSWidgets extends ActivityHandler {
         // context.sendActivity({ attachments: [this.createSignInCard()] });
     }
     async adaptiveCard(context){
-        await context.sendActivity({ attachments: [ 
+        context.sendActivity({ attachments: [ 
             CardFactory.adaptiveCard({
                 "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
                 "type": "AdaptiveCard",
@@ -520,7 +520,7 @@ class MSWidgets extends ActivityHandler {
     }
     
     async animationCard(content){
-        await content.sendActivity({
+        content.sendActivity({
             attachments:[
                 CardFactory.animationCard(
                     'Frittata',
@@ -541,7 +541,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async audioCard(content){
-        await content.sendActivity({
+        content.sendActivity({
             attachments:[
                 CardFactory.audioCard(
                     'I am your father',
@@ -564,7 +564,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async receiptCard(content){
-        await content.sendActivity({
+        content.sendActivity({
             attachments:[
                 CardFactory.receiptCard({
                     title: 'John Doe',
@@ -607,7 +607,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async signInCard(content){
-        await content.sendActivity({
+        content.sendActivity({
             attachments:[
                 CardFactory.signinCard(
                     'BotFramework Sign in Card',
@@ -619,7 +619,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async thumbnailCard(content){
-        await content.sendActivity({
+        content.sendActivity({
             attachments:[
                 CardFactory.thumbnailCard(
                     'BotFramework Thumbnail Card',
@@ -639,7 +639,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async videoCard(content){
-        await content.sendActivity({
+        content.sendActivity({
             attachments:[
                 CardFactory.videoCard(
                     '2018 Imagine Cup World Championship Intro',
@@ -659,7 +659,7 @@ class MSWidgets extends ActivityHandler {
     }
 
     async suggestedActions(content){
-        await content.sendActivity(
+        content.sendActivity(
             MessageFactory.suggestedActions(
                 ['Temari Bento', 'Frittata', 'Souffle Omelette', 'Sumire Karaage Roll', 'Onigiri'],
                 'What is the best food?'
@@ -685,7 +685,7 @@ class MSWidgets extends ActivityHandler {
                 value: 'https://docs.microsoft.com/en-us/azure/bot-service/'
             }
         ];
-        await content.sendActivity(
+        content.sendActivity(
             MessageFactory.suggestedActions(
                 cardActions,
                 'What is the best food?'
