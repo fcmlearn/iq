@@ -237,6 +237,12 @@ const siqwidgetformat = {
             "action" : "forward",
             "replies":["forwading ..."]
         }
+    },
+    end:{
+        "zohosalesiq": {
+            "action" : "end",
+            "replies":["ending ..."]
+        }
     }
 }
 
@@ -332,6 +338,9 @@ class MSWidgets extends ActivityHandler {
                 break;
             case 'siq fwd':
                 await context.sendActivity({ channelData: siqwidgetformat.forward });
+                break;
+            case 'siq end':
+                await context.sendActivity({ channelData: siqwidgetformat.end });
                 break;
             default:
                 await context.sendActivity({
