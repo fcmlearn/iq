@@ -243,6 +243,12 @@ const siqwidgetformat = {
             "action" : "end",
             "replies":["ending ..."]
         }
+    },
+    opbusy:{
+        "zohosalesiq": {
+            "action" : "operator_busy",
+            "replies":["Thanks for contacting us today, please leave a message and our operator will contact you shortly ..."]
+        }
     }
 }
 
@@ -341,6 +347,9 @@ class MSWidgets extends ActivityHandler {
                 break;
             case 'siq end':
                 await context.sendActivity({ channelData: siqwidgetformat.end });
+                break;
+            case 'siq opbusy':
+                await context.sendActivity({ channelData: siqwidgetformat.opbusy });
                 break;
             default:
                 await context.sendActivity({
