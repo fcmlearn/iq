@@ -34,6 +34,7 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
 
 // Listening to incoming requests
 server.post('/api/messages', (req, res) => {
+    console.log(`wjdlz | /api/messages | req :`+req);
     adapter.processActivity(req, res, async (context) => {
         // Route to main dialog.
         await bot.run(context);
