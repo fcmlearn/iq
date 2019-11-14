@@ -43,19 +43,39 @@ class AnswerBot extends ActivityHandler {
                                 {
                                     "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
                                 },
-                                                                {
-                                    "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
-                                },
-                                                                {
-                                    "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
-                                },
-                                                                {
+                                {
                                     "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
                                 },
                                 {
                                     "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
+                                },
+                                {
+                                    "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
+                                },
+                                {
+                                    "text": "rkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfjrkjhfd vcjh dhjf chj j fjh dj jh fhd hc hj fjhld h j fh sdc dfscjlh efhjs jh jhfchjhjfj"
+                                },
+                                {
+                                    "text": "Hello there, I'm Happy. "
+                                },
+                                {
+                                    "links": [
+                                        {
+                                            "url": "http://zylker.com/help/home.png",
+                                            "icon": "https://www.marketdirect.co.za/l/government-saqa-certified-how-to-tender-workshop-class-course/?utm_source=zobot&utm_medium=link&utm_campaigns=the+tender+master+class",
+                                            "text": "The Tender Master Class"
+                                        },
+                                        {
+                                            "url": "https://www.marketdirect.co.za/l/tender-finance/index.php",
+                                            "icon": "http://zylker.com/help/discounts.png",
+                                            "text": "Tender Finance"
+                                        }
+                                    ],
+                                    "type": "links",
+                                    "image": "http://zylker.com/help/common.png",
+                                    "text": "How may I help you today?"
                                 }
-                            ]
+                            ],
                             suggestions:['hello', 'hi', 'widgets', 'waterfall',
                             'hero', 'adaptive', 'animation', 'audio', 'receipt', 'signin', 'thumbnail', 'video', 'sugg', 'suggcarousel', 'carousel',
                             'siq date time', 'siq time', 'siq loc', 'siq range cal', 'siq cal', 'siq range slider', 'siq slider', 'siq multiselect', 'siq singleselect', 'siq like', 'siq star', 'siq happy',
