@@ -29,7 +29,7 @@ class AnswerBot extends ActivityHandler {
         super();
         this.onMessage(async (context, next) => {
             var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
-            console.log(`wjdlz | `+context.sendActivity(`testing msg ...`));
+            //console.log(`wjdlz | `+context.sendActivity(`testing msg ...`));
             //await context.sendActivity(res);
             if (context.activity.type === 'message' && context.activity.text) {
                 let text = context.activity.text.toLocaleLowerCase();
@@ -133,7 +133,7 @@ class AnswerBot extends ActivityHandler {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; ++cnt) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity('Hello and welcome!');
+                    //await context.sendActivity('Hello and welcome!');
                     // await next();
                 }
             }
