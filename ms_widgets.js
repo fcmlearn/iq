@@ -488,6 +488,7 @@ class MSWidgets extends ActivityHandler {
                     attachmentLayout: AttachmentLayoutTypes.Carousel
                 });
         }
+        console.log(`wjdlz | siq widget delivered :)`);
     }
     
     // widget methods
