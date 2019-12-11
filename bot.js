@@ -119,6 +119,9 @@ class AnswerBot extends ActivityHandler {
                 await context.sendActivity(`unable to process :(`);
             }
             // By calling next() you ensure that the next BotHandler is run.
+            
+            console.log(`wjdlz | end of onMsg ...`);
+            
             await next();
         });
         
