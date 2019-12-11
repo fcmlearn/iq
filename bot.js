@@ -29,7 +29,7 @@ class AnswerBot extends ActivityHandler {
         super();
         this.onMessage(async (context, next) => {
             var res = MessageFactory.text('Response' + ' : '+`vs code | v: 0.1 | context :`+JSON.stringify(context.activity) );
-            console.log(`wjdlz | res :`+res+);
+            console.log(`wjdlz | res :`+res);
             await context.sendActivity(res);
             if (context.activity.type === 'message' && context.activity.text) {
                 let text = context.activity.text.toLocaleLowerCase();
