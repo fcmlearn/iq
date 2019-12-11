@@ -44,6 +44,7 @@ server.post('/api/messages', (req, res) => {
 // const conversationReferences = {};
 // Listen for incoming notifications and send proactive messages to users.
 server.get('/api/notify', async (req, res) => {
+    console.log(`wjdlz | /api/notify | req :`+req);
     // for (let conversationReference of Object.values(conversationReferences)) {
     //     await adapter.continueConversation(conversationReference, async turnContext => {
     //         await turnContext.sendActivity('proactive hello');
