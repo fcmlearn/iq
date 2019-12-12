@@ -32,6 +32,7 @@ class AnswerBot extends ActivityHandler {
             console.log(`wjdlz | inside onMessage ... `);
             //await context.sendActivity({text:`testing in onMsg`});
             if (context.activity.type === 'message' && context.activity.text) {
+                console.log(`wjdlz | inside onMessage | receive msg  : `+context.activity.text);
                 let text = context.activity.text.toLocaleLowerCase();
                 switch(text)
                 {
